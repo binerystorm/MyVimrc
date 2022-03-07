@@ -68,7 +68,7 @@ Plug 'binerystorm/Spairs'
 if (isdirectory(expand("~/scripts/vimplugins/")))
   Plug '~/scripts/vimplugins/scratch'
 else
-  echom "scratch does not exist"
+  echom "You don't have a ~/scripts/vimplugins directory"
 endif
 
 call plug#end()
