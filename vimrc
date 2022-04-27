@@ -18,12 +18,14 @@ set undofile
 
 set encoding=utf-8
 
-set tabstop=2
+set tabstop=4
 set expandtab
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
 set smarttab
 set nu rnu
+
+set scrolloff=5
 
 " searching
 set incsearch
@@ -72,6 +74,12 @@ else
 endif
 
 call plug#end()
+
+" Colors
+" ======
+
+hi QuickFixLine ctermbg=8
+
 
 " global vars
 " ===========
