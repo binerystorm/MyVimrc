@@ -38,6 +38,17 @@ set smartcase
 ""  autocmd BufReadCmd */Makefile echom "You entered Makefile"
 ""augroup END
 
+" Status line
+" ===========
+set laststatus=2
+set statusline=%{FugitiveStatusline()}
+set statusline+=%=
+set statusline+=%f
+set statusline+=%4l
+set statusline+=/
+set statusline+=%L
+
+
 " key mappings
 " ============
 let mapleader=" "
@@ -54,6 +65,8 @@ nnoremap <leader>ff :F<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>uf :UndotreeFocus<CR>
 
+
+
 " plugins
 " =======
 " (with vim-plug)
@@ -65,8 +78,8 @@ Plug 'terryma/vim-smooth-scroll'
 Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'skywind3000/asyncrun.vim'
 Plug 'binerystorm/Spairs'
+Plug 'tpope/vim-dispatch'
 if (isdirectory(expand("~/scripts/vimplugins/")))
   Plug '~/scripts/vimplugins/scratch'
 else
