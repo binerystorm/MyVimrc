@@ -65,7 +65,10 @@ nnoremap <leader>ff :F<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>uf :UndotreeFocus<CR>
 
+" Commands
+" ========
 
+command Ipy :Start ipython.exe
 
 " plugins
 " =======
